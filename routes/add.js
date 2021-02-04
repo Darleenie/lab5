@@ -5,7 +5,7 @@ exports.addFriend = function(request, response) {
 	data.friends.push({
 		"name": request.query.name,
 		"description": request.query.description,
-		"imageURL": "http://lorempixel.com"//fake imageURL			
+		"imageURL": "http://lorempixel.com/400/400/people"//fake imageURL			
 	});
 	response.render('index', data);
 };
